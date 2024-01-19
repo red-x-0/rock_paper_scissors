@@ -13,7 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const socket = io("http://localhost:8080/");
+    const socket = io("https://peaceful-heliotrope-df6e53.netlify.app/");
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
